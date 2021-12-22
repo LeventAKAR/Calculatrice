@@ -1,0 +1,64 @@
+body{
+    background-color: black;
+}
+
+.app {
+    display: grid;
+    width: 450px;
+    margin-top: 30vh;
+    margin-left: 70vh;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 75px repeat(5, 45px);
+    grid-template-areas:
+    "resultat resultat resultat resultat"
+    "9 8 7 reset"
+    "6 5 4 reset"
+    "3 2 1 reset"
+    "0 dot plus minus"
+    "equal equal times div";
+    border: 1px solid #D2691E;
+    border-radius: 4px;
+    background-color: gray;
+}
+h3 {
+    text-align: right;
+    margin: 0px 0px 0px 0px;
+    font-size: 3rem;
+    grid-area: resultat;
+    border: 7px solid #D2691E;
+}
+button {
+    background: #D2691E;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.operateur{
+    background-color:#B22222;
+}
+
+.operateur:hover{
+    background: #CD5C5C;
+}
+
+button:hover {
+    background: #CD853F;
+}
+#equal {
+    grid-area: equal;
+    background-color: blue;
+}
+
+#equal:hover{
+    background: royalblue;
+}
+#reset {
+    grid-area: reset;
+    background-color: teal;
+}
+
+#reset:hover{
+    background: rgb(5, 190, 190);
+}
